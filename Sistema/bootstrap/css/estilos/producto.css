@@ -1,0 +1,102 @@
+*{margin :0; padding:0;}
+
+
+header{
+	background-color: #3498db; 
+	background-color: #007bff;
+  	color: #fff;
+  	border-color: #007bff;
+  	padding: 20px;
+    text-align: center;
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 40px;
+    font-family: 'Merriweather', serif;  
+}
+
+.padre{
+    padding : 40px;
+    display :flex;                      /*pone los dos elementos en el eje principal*/
+    justify-content : space-evenly;      /*eje principal*/
+    align-items : center;               /*eje secundario*/
+}
+
+
+
+.hijo{ width:50%;}
+.img{width: 550px;  }
+/* MEDIA QUERYS - RESPONSIVE */
+
+@media screen and(max-width: 320px),
+(max-width: 768px) {
+    .titulo {
+        font-size: 23px;
+    }
+    header {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .hijo {
+        width: 100%;
+    }
+    .hijo form {
+        width: 95%;
+    }
+        [ class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation :portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+@media(max-width: 500px){
+    .table thead{
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom:15px;
+    }
+    .table td{
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+.table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left:0;
+        width: 50%;
+        padding-left:15px;
+        font-size:15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}

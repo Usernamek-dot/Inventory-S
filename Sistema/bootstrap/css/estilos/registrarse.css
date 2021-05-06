@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* que el div ocupe todo el ancho */
+    min-height: 100%;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    padding: 20px;
+}
+
+.titulo {
+    font-weight: 300;
+    font-size: 40px;
+    font-family: 'Merriweather', serif;
+}
+
+.padre {
+    padding: 40px;
+    display: flex;
+    /*pone los dos elementos en el eje principal*/
+    justify-content: space-evenly;
+    /*eje principal*/
+    align-items: center;
+    /*eje secundario*/
+}
+
+.hijo {
+    width: 40%;
+}
+
+img {
+    width: 555px;
+    animation: ease-in animat 1s;
+}
+
+
+/* MEDIA QUERYS - RESPONSIVE */
+
+@media screen and (max-width: 600px) and (max-width: 500px) {
+    .padre {
+        align-items: flex-end;
+    }
+    .hijo {
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    [ class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation :portrait) {
+    body {
+        flex-direction: column;
+    }
+}

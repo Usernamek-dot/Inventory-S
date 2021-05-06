@@ -1,0 +1,158 @@
+*{margin :0; padding:0;}
+
+
+header{
+	
+	background-color: #007bff;
+  	color: #fff;
+    width: 100%;
+  	border-color: #007bff;
+  	padding: 20px;
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;  
+}
+
+.boton{
+    margin: 30px;
+}
+
+
+.div{
+    padding: 20px;
+    margin-top: 10px;
+    display :flex;                      
+    justify-content : space-evenly;     
+    align-items : center;               /*eje secundario*/
+    box-shadow: 0px 0px 5px 1px rgba(9, 132, 227,1.0);
+}
+.factura{ 
+    margin: 20px ;
+}
+
+.espacio {
+	margin-left: 80px;
+	padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 2.5;
+    border-radius: 0.3rem;
+}
+
+.espacio1{
+	margin-left: 16px;
+}
+
+
+.placeh::placeholder { 
+    color: black;
+    opacity: 1; 
+}
+
+.limitetd{
+    width:80px; 
+    overflow:hidden; 
+    height:27px;
+}
+
+
+@media screen and(max-width: 350px){
+
+    header {
+        width: 100%;
+        flex-direction: column;
+         text-align: center;
+    }
+    header h1 {
+        text-align: center;
+    }
+
+    body button {
+        flex-direction: column;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 1%;
+    }
+}
+
+@media(max-width: 500px){
+
+    .table thead{
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom:15px;
+    }
+    .table td{
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left:0;
+        width: 50%;
+        padding-left:15px;
+        font-size:15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+
+@media screen (max-width: 799px) {
+
+    .titulo{
+        font-weight: 50%;
+        font-size: 23px;
+        font-family: 'Merriweather', serif;  
+    }
+    header {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1 {
+        text-align: center;
+    }
+    body {
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .hijo {
+        width: 100%;
+    }
+    .hijo form {
+       height: 100%;
+    }
+    
+  
+
+@media screen and(min-width: 800px){
+
+     header {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1 {
+        text-align: center;
+    }
+}
+
+

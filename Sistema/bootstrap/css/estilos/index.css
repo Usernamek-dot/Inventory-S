@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Stardos Stencil', cursive;
+    width: 100%;
+    background: #00B4DB;
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+    background: linear-gradient(to right, rgb(0, 134, 179), hsla(191, 100%, 43%, 0.651)), url(../../../img/index.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.logo {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+.wave {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+header .text-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    /*centrar verticalmente*/
+    align-items: center;
+    justify-content: center;
+    /*para que las dos frases esten una debajo de otra*/
+    flex-direction: column;
+}
+
+.text-header h1 {
+    font-size: 50px;
+    color: white;
+    font-family: 'Stardos Stencil';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    margin-top: 10px;
+    animation: 1s moveright ease-in;
+}
+
+.text-header h2 {
+    font-size: 14px;
+    color: cornsilk;
+    font-weight: 300;
+    margin-top: 10px;
+    animation: 1s moveleft ease-in;
+}
+
+.text-header a {
+    margin-top: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.795);
+    animation: up 1s ease-in;
+}
+
+
+path{
+    
+}
+
+/*animations*/
+
+@keyframes moveleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveright {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width:768px),
+(max-width:320px) {
+    .hea
+}
